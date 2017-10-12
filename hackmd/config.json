@@ -3,9 +3,9 @@
         "urladdport": true,
         "email": true,
         "db": {
-            "username": "hackmd",
-            "password": "hackmdpass",
-            "database": "hackmd",
+            "username": "PG_USER",
+            "password": "PG_PASSWORD",
+            "database": "PG_DB",
             "host": "hackmdPostgres",
             "port": "5432",
             "dialect": "postgres"

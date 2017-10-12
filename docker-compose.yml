@@ -1,14 +1,14 @@
 hackmdPostgres:
   image: postgres
   environment:
-    - POSTGRES_USER=hackmd
-    - POSTGRES_PASSWORD=hackmdpass
-    - POSTGRES_DB=hackmd
+    - POSTGRES_USER=$POSTGRES_USER
+    - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+    - POSTGRES_DB=$POSTGRES_DB
 hackmd:
-  image: hackmdio/hackmd:latest
+  image: hackmdpw
   environment:
-    - POSTGRES_USER=hackmd
-    - POSTGRES_PASSWORD=hackmdpass
+    - POSTGRES_USER=$POSTGRES_USER
+    - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
   links:
     - hackmdPostgres:hackmdPostgres
   ports:
